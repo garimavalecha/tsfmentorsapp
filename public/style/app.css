@@ -1,0 +1,26 @@
+.image-gap
+{
+    padding:5%;
+    width:80%;
+    height:auto;
+    padding-left:30%;
+    
+}
+.card
+{
+    margin-left: auto;
+  margin-right: auto;
+  padding-bottom:5%;
+}
+.name
+{
+    padding-left:40%;
+}
+.in-line 
+{
+    display:inline;
+}
+#delete
+{
+    display:inline;
+}
