@@ -1,0 +1,15 @@
+<% include ./partials/header%>
+ 
+<%mentors.forEach(function(mentor){%>
+
+ <div class="card" style="width:400px">
+    <img class="card-img-bottom" src="<%= mentor.image%>" alt="Mentor image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title"><%= mentor.name%></h4>
+      <p class="card-text"><%-mentor.profile.substring(0,mentor.profile.indexOf('.'))%></p>
+      <a href="/mentors/<%=mentor._id%>" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+</div>
+<%})%>
+<% include ./partials/footer%> 

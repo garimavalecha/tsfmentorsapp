@@ -1,0 +1,20 @@
+<% include ./partials/header%>
+<div class="container">
+    <form action="/mentors" method="POST">
+  <div class="form-group">
+    <label for="Input">Mentor Name</label>
+    <input type="name" class="form-control" name="mentor[name]" id="exampleFormControlInput1" placeholder="name">
+  </div>
+  <div class="form-group">
+    <label for="Input2">Mentor Image</label>
+    <input type="name" class="form-control" image="mentor[image]" id="exampleFormControlInput2" placeholder="image url">
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Description</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="mentor[profile]" placeholder="about the mentor"></textarea>
+  </div>
+    <button type="submit" class="btn btn-primary">Add New Mentor</button>
+</form>
+</div>
+<% include ./partials/footer%> 

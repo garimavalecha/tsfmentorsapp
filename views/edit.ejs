@@ -1,0 +1,27 @@
+<% include ./partials/header%>
+<div class="container">
+    <h1>Edit Details of <%=mentor.name%></h1>
+    <form action="/mentors/<%=mentor._id%>?_method=PUT" method="POST">
+  <div class="form-group">
+    <label for="Input">Mentor Name</label>
+    <input type="name" class="form-control" name="mentor[name]" id="exampleFormControlInput1" value="<%=mentor.name%>">
+  </div>
+  <div class="form-group">
+    <label for="Input2">Mentor Image</label>
+    <input type="name" class="form-control" image="mentor[image]" id="exampleFormControlInput2" value="<%=mentor.image%>">
+  </div>
+  
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Description</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ><%=mentor.profile%></textarea>
+  </div>
+  <input class="btn btn-primary" type="submit">
+
+</form>
+
+</div>
+<% include ./partials/footer%> 
+
+
+
+

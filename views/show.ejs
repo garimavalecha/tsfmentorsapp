@@ -1,0 +1,17 @@
+<% include ./partials/header%>
+    <div class="ui main text container segment">
+        <div><h1 class="container name"><%= mentor.name%></h1></div>
+        <div class="top attached segment">
+            <img class="container image-gap" src="<%= mentor.image%>">
+        
+        <div class="description container">
+            <p><%-mentor.profile%></p>
+        </div>
+        <a href="/mentors/<%=mentor._id%>/edit" ><button type="submit" class="btn btn-primary">Edit</button></a>
+        <form id="delete" action="/mentors/<%=mentor._id%>?_method=DELETE" method="POST">
+            <button class="btn btn-primary in-line">Delete</button>
+        </form>
+        </div>
+        
+    </div>
+<% include ./partials/footer%> 
